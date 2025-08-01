@@ -1,5 +1,4 @@
-# Sap
-# DeFi Token Swap Platform
+# Sap : A DeFi Token Swap Platform
 
 A full-stack decentralized finance (DeFi) application featuring token swapping, liquidity provision, and staking functionality built with React, Node.js, and Solidity.
 
