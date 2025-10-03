@@ -5,7 +5,7 @@ pragma solidity ^0.8.20;
  * @title Defi Token Swap
  * @dev Interface for the Chainlink V3 data feed aggregator.
  */
-interface Defi Token Swap  {
+interface DefiTokenSwap {
   function decimals() external view returns (uint8);
   function description() external view returns (string memory);
   function version() external view returns (uint256);
@@ -164,7 +164,7 @@ contract PriceOracle {
         address priceFeedAddress = priceFeeds[prediction.token];
         require(priceFeedAddress != address(0), "Price feed not set for this token");
 
-        AggregatorV3Interface priceFeed = AggregatorV3Interface(priceFeedAddress);
+        DefiTokenSwap priceFeed = DefiTokenSwap(priceFeedAddress);
         (, int256 price, , , ) = priceFeed.latestRoundData();
 
         uint256 currentPrice = uint256(price);
