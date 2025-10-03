@@ -2,10 +2,10 @@
 pragma solidity ^0.8.20;
 
 /**
- * @title AggregatorV3Interface
+ * @title Defi Token Swap
  * @dev Interface for the Chainlink V3 data feed aggregator.
  */
-interface AggregatorV3Interface {
+interface Defi Token Swap  {
   function decimals() external view returns (uint8);
   function description() external view returns (string memory);
   function version() external view returns (uint256);
